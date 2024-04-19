@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5cbb23-85e6-4c93-abe7-03ed7ad05dd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/first/Alignment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/first/DataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/first/Magical.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/first/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/first/Race.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/first/Ring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/first/TolkienCharacter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/junit5/first/DataServiceTest.java" afterDir="false" />
+    <list default="true" id="bb5cbb23-85e6-4c93-abe7-03ed7ad05dd5" name="Changes" comment="Tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/junit5/email/EmailValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/junit5/email/EmailValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/junit5/first/Alignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/junit5/model/Alignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/junit5/first/DataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/junit5/model/DataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/junit5/first/Magical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/junit5/model/Magical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/junit5/first/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/junit5/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/junit5/first/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/junit5/model/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/junit5/first/Ring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/junit5/model/Ring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/junit5/first/TolkienCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/junit5/model/TolkienCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/junit5/first/DataServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/junit5/model/DataServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,8 @@
     "JUnit.DataServiceTest.ensureThatOneRingBearerIsPartOfTheFellowship.executor": "Run",
     "JUnit.DataServiceTest.ensureThatWeCanRetrieveFellowshipMultipleTimes.executor": "Run",
     "JUnit.DataServiceTest.executor": "Run",
+    "JUnit.EmailValidatorTest.emailValidator_CorrectEmailSubDomain_ReturnsTrue.executor": "Run",
+    "JUnit.EmailValidatorTest.executor": "Run",
     "JUnit.MyClassTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -84,20 +82,21 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.junit5.email" />
       <recent name="org.junit5.first" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DataServiceTest">
+  <component name="RunManager" selected="JUnit.EmailValidatorTest">
     <configuration name="DataServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.junit5.first.*" />
+          <option name="PATTERN" value="org.junit5.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.junit5.first" />
-      <option name="MAIN_CLASS_NAME" value="org.junit5.first.DataServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="org.junit5.model.DataServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,61 +106,60 @@
       <module name="junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.junit5.first.*" />
+          <option name="PATTERN" value="org.junit5.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.junit5.first" />
-      <option name="MAIN_CLASS_NAME" value="org.junit5.first.DataServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="org.junit5.model.DataServiceTest" />
       <option name="METHOD_NAME" value="ensureAge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataServiceTest.ensureOrdering" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DataServiceTest.ensureTimeLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.junit5.first.*" />
+          <option name="PATTERN" value="org.junit5.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.junit5.first" />
-      <option name="MAIN_CLASS_NAME" value="org.junit5.first.DataServiceTest" />
-      <option name="METHOD_NAME" value="ensureOrdering" />
+      <option name="MAIN_CLASS_NAME" value="org.junit5.model.DataServiceTest" />
+      <option name="METHOD_NAME" value="ensureTimeLimit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataServiceTest.ensureThatFellowsStayASmallGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmailValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.junit5.first.*" />
+          <option name="PATTERN" value="org.junit5.email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.junit5.first" />
-      <option name="MAIN_CLASS_NAME" value="org.junit5.first.DataServiceTest" />
-      <option name="METHOD_NAME" value="ensureThatFellowsStayASmallGroup" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.junit5.email" />
+      <option name="MAIN_CLASS_NAME" value="org.junit5.email.EmailValidatorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataServiceTest.ensureThatWeCanRetrieveFellowshipMultipleTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmailValidatorTest.emailValidator_CorrectEmailSubDomain_ReturnsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.junit5.first.*" />
+          <option name="PATTERN" value="org.junit5.email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.junit5.first" />
-      <option name="MAIN_CLASS_NAME" value="org.junit5.first.DataServiceTest" />
-      <option name="METHOD_NAME" value="ensureThatWeCanRetrieveFellowshipMultipleTimes" />
+      <option name="PACKAGE_NAME" value="org.junit5.email" />
+      <option name="MAIN_CLASS_NAME" value="org.junit5.email.EmailValidatorTest" />
+      <option name="METHOD_NAME" value="emailValidator_CorrectEmailSubDomain_ReturnsTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmailValidatorTest" />
+        <item itemvalue="JUnit.EmailValidatorTest.emailValidator_CorrectEmailSubDomain_ReturnsTrue" />
+        <item itemvalue="JUnit.DataServiceTest.ensureTimeLimit" />
         <item itemvalue="JUnit.DataServiceTest" />
         <item itemvalue="JUnit.DataServiceTest.ensureAge" />
-        <item itemvalue="JUnit.DataServiceTest.ensureThatFellowsStayASmallGroup" />
-        <item itemvalue="JUnit.DataServiceTest.ensureOrdering" />
-        <item itemvalue="JUnit.DataServiceTest.ensureThatWeCanRetrieveFellowshipMultipleTimes" />
       </list>
     </recent_temporary>
   </component>
@@ -197,11 +195,25 @@
       <workItem from="1713513933931" duration="178000" />
       <workItem from="1713514454608" duration="1229000" />
       <workItem from="1713515872560" duration="1578000" />
-      <workItem from="1713521746893" duration="2320000" />
+      <workItem from="1713521746893" duration="3730000" />
+      <workItem from="1713526500426" duration="1168000" />
     </task>
+    <task id="LOCAL-00001" summary="Tests">
+      <option name="closed" value="true" />
+      <created>1713524117217</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713524117217</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests" />
   </component>
 </project>

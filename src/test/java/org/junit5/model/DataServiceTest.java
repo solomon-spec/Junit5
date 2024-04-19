@@ -1,12 +1,13 @@
-package org.junit5.first;
+package org.junit5.model;
 
 import org.junit.jupiter.api.*;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit5.first.Race.HOBBIT;
+import static org.junit5.model.Race.HOBBIT;
 
 class DataServiceTest {
 
@@ -123,7 +124,7 @@ class DataServiceTest {
                         .stream().filter(fellow -> fellow.getRace().equals(Race.ELF)
                                 || fellow.getRace().equals(Race.DWARF) || fellow.getRace().equals(Race.MAIA))
                         .allMatch(fellow -> fellow.age > 100));
-    }
+     }
 
     @Test
     void ensureThatFellowsStayASmallGroup() {
@@ -133,6 +134,10 @@ class DataServiceTest {
         // TODO Write a test to get the 20 element from the fellowship throws an
         // IndexOutOfBoundsException
         assertThrows(IndexOutOfBoundsException.class, () -> fellowship.get(20));
+    }
+    @Test
+    void ensureTimeLimit(){
+        assertTimeout(Duration.ofMillis(2005), () ->dataService.update());
     }
 
 }

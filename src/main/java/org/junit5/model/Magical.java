@@ -1,4 +1,4 @@
-package org.junit5.first;
+package org.junit5.model;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

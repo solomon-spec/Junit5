@@ -1,22 +1,18 @@
-package org.junit5.first;
+package org.junit5.model;
 
 
-import static org.junit5.first.Race.DWARF;
-import static org.junit5.first.Race.ELF;
-import static org.junit5.first.Race.HOBBIT;
-import static org.junit5.first.Race.MAIA;
-import static org.junit5.first.Race.MAN;
-import static org.junit5.first.Race.ORC;
+import static org.junit5.model.Race.DWARF;
+import static org.junit5.model.Race.ELF;
+import static org.junit5.model.Race.HOBBIT;
+import static org.junit5.model.Race.MAIA;
+import static org.junit5.model.Race.MAN;
+import static org.junit5.model.Race.ORC;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.junit5.first.Movie;
-import org.junit5.first.Ring;
-import org.junit5.first.TolkienCharacter;
 
 public class DataService {
 
@@ -104,6 +100,13 @@ public class DataService {
         ringBearers.put(Ring.vilya, elrond);
         ringBearers.put(Ring.oneRing, frodo);
         return  ringBearers;
+    }
+    public void update(){
+        try{
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
